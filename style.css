@@ -1,78 +1,86 @@
 body {
-margin: 0;
-padding: 0;
-font-family: Arial, sans-serif;
-background: linear-gradient(120deg, #6a11cb, #2575fc);
-height: 100vh;
-display: flex;
-justify-content: center;
-align-items: center;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	background: #f4f4f4;
 }
 
-
-.login-container {
-width: 100%;
-max-width: 380px;
-padding: 20px;
+header {
+	background: #333;
+	color: white;
+	padding: 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-
-.login-box {
-background: #ffffff;
-padding: 30px;
-border-radius: 12px;
-box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-display: flex;
-flex-direction: column;
-gap: 14px;
+header a {
+	color: white;
+	text-decoration: none;
+	margin-left: 15px;
 }
 
-
-.login-box h2 {
-margin: 0 0 10px;
-text-align: center;
+.search-bar {
+	background: #007bff;
+	padding: 20px;
+	text-align: center;
+	color: white;
 }
 
-
-label {
-font-size: 14px;
-color: #333;
+.search-bar input {
+	padding: 8px;
+	margin: 5px;
+	width: 200px;
 }
 
-
-input[type="text"], input[type="password"] {
-width: 100%;
-padding: 12px;
-border-radius: 6px;
-border: 1px solid #ccc;
-font-size: 15px;
+/* Layout Flexbox cho phần thân */
+.container {
+	display: flex;
+	max-width: 1200px;
+	margin: 20px auto;
+	gap: 20px;
+	padding: 0 20px;
 }
 
-
-.btn-login {
-background: #2575fc;
-color: white;
-padding: 12px;
-border: none;
-border-radius: 6px;
-font-size: 16px;
-cursor: pointer;
+/* Sidebar trái (25%) */
+.sidebar-left {
+	width: 25%;
+	background: white;
+	padding: 15px;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-
-.btn-login:hover {
-background: #1253c3;
+/* Main content (75%) */
+.content-right {
+	width: 75%;
 }
 
-
-.note {
-text-align: center;
-font-size: 14px;
-margin-top: 10px;
+/* Thẻ chuyến xe */
+.trip-card {
+	background: white;
+	padding: 15px;
+	margin-bottom: 15px;
+	border-radius: 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.trip-info h3 {
+	margin: 0 0 10px 0;
+	color: #007bff;
+}
 
-.note a {
-color: #2575fc;
-text-decoration: none;
+.price {
+	color: #d9534f;
+	font-size: 1.2em;
+}
+
+.btn-book {
+	background: #28a745;
+	color: white;
+	padding: 10px 20px;
+	text-decoration: none;
+	border-radius: 5px;
 }
